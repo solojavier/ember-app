@@ -8,7 +8,7 @@ EmberApp::Application.routes.draw do
     end
 
     def matches? request
-      request.format == mine_type
+      request.format == mime_type
     end
   end
 
