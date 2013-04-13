@@ -1,0 +1,10 @@
+<h1>Users</h1>
+{{#linkTo 'users.new' class='btn btn-primary'}}Create{{/linkTo}}
+<table class='table table-striped'>
+  {{#each user in controller}}
+    <tr>
+      <td>{{user.id}}</td>
+      <td>{{#linkTo 'users.show' user}}{{user.fullName}}{{/linkTo}}</td>
+    </tr>
+  {{/each}}
+</table>
